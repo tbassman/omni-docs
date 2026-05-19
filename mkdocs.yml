@@ -4,14 +4,36 @@ site_description: Personal reference for systems, languages, ML topics, and guid
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: indigo
-    accent: indigo
+    - scheme: default
+      primary: blue grey
+      accent: blue grey
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Source Sans 3
+    code: Fira Code
   features:
     - navigation.sections
     - navigation.top
+    - navigation.integrate
+    - toc.integrate
     - search.highlight
     - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
@@ -20,5 +42,9 @@ nav:
   - Guides:
     - MkDocs: guides/mkdocs.md
     - Git: guides/git.md
-  - Systems: []
-  - Concepts: []
+    - Security: guides/security.md
+  - Systems:
+    - Claude: systems/claude.md
+    - Mac: systems/mac.md
+  - Concepts:
+    - AI Community: concepts/ai-community.md

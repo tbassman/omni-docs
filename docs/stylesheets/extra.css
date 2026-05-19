@@ -1,0 +1,28 @@
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #e4e8ed;
+  --md-accent-fg-color: #546e7a;        /* blue grey 600 */
+  --md-accent-fg-color--transparent: rgba(84, 110, 122, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: #90a4ae;        /* blue grey 300 */
+  --md-accent-fg-color--transparent: rgba(144, 164, 174, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  color: #b0bec5;                       /* blue grey 200 — soft grey for header text and icons */
+}
+
+[data-md-color-scheme="slate"] .md-search__icon {
+  color: #b0bec5 !important;
+}
+
+.md-nav__link--active,
+.md-nav__link:active {
+  color: #546e7a !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__link:active {
+  color: #90a4ae !important;
+}
